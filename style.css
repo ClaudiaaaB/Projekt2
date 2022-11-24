@@ -307,9 +307,8 @@ h6 {
     width: 768px;
   }
 }
-
-@media screen and (max-width: 960px) {
+@media screen and (min-width: 1200px) {
   .container {
-    width: 768px;
+    width: 960px;
   }
 }
