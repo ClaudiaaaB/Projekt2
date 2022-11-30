@@ -30,8 +30,7 @@ h2 {
   line-height: 3;
   padding-left: 27px;
   padding-right: 28px;
-  display: flex;
-  align-items: center;
+  
   text-align: center;
 }
 
@@ -146,20 +145,13 @@ a:hover {
   flex-direction: column;
   align-items: center;
 }
-.post-title:nth-of-type(even) {
-  flex-flow: row-reverse;
-  display: flex;
-}
-
-.post-title:nth-of-type(odd) {
-  flex-flow: row-reverse;
-  display: flex;
-}
 .post-title_image {
   display: block;
   width: 197px;
   height: 197px;
   border-radius: 50%;
+  padding-left: 119px;
+  padding-right: 125px;
 }
 .post-title_title {
   text-decoration: solid;
@@ -170,12 +162,8 @@ a:hover {
 }
 
 .post-title_title2 {
-  margin-top: 15px;
-  margin-bottom: 15px;
   text-decoration: solid;
   line-height: 21px;
-
-  padding: 10px;
   color: #000000;
   font-weight: 800;
   padding-left: 14px;
@@ -193,10 +181,9 @@ a:hover {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  text-align: right;
-  padding: 10px;
   color: #000000;
   text-align: justify;
+  padding-left: 14px;
 }
 
 .page-container {
@@ -221,6 +208,7 @@ h3 {
   padding-top: 76px;
   padding-left: 9px;
   padding-right: 10px;
+  text-align: center;
 }
 
 .grid-container {
@@ -230,12 +218,11 @@ h3 {
   row-gap: 63px;
   background-color: #405d78;
   transition: width 0.5s, height 0.5s;
-  padding-left: 52px;
-  padding-right: 52px;
   padding-top: 175px;
   padding-left: 50px;
   padding-right: 52px;
   padding-bottom: 45px;
+  justify-content: center;
 }
 
 .grid-item:hover {
@@ -335,10 +322,13 @@ h6 {
     flex-direction: row;
   }
   .post-title:nth-of-type(even) {
-    flex-flow: column;
+    flex-flow: row-reverse;
+    display: flex;
   }
+
   .post-title:nth-of-type(odd) {
-    flex-flow: column;
+    flex-flow: row-reverse;
+    display: flex;
   }
   .grid-container {
     display: grid;
@@ -369,9 +359,19 @@ h6 {
 
   .post-title_title2 {
     text-align: right;
+    margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
   }
+  .post-title_text2 {
+    text-align: right;
+    padding: 10px;
 }
 
+h2{
+  display: flex;
+  align-items: center;
+}
 @media screen and (min-width: 360px) {
   .container {
     width: 768px;
