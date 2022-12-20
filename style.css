@@ -95,14 +95,16 @@ a {
   margin-left: 14px;
   margin-bottom: 177px;
 }
-.btn:hover {
+
+/* .btn:hover {
   color: black;
   background-color: white;
 }
 a:hover {
   color: black;
   background-color: white;
-}
+} */
+
 .navbar-container {
   width: 100%;
   height: 50px;
@@ -152,7 +154,6 @@ a:hover {
   line-break: auto;
 }
 .post-title {
-  display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
@@ -222,9 +223,10 @@ a:hover {
   padding-bottom: 45px;
   justify-content: center;
 }
-.grid-item:hover {
+/* .grid-item:hover {
   transform: scale(1.05);
-}
+} */
+
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
@@ -252,20 +254,16 @@ a:hover {
   color: #ffffff;
   padding-left: 22px;
   padding-right: 14px;
-  position: absolute;
-  padding-bottom: 88px;
-  padding-top: 38px;
 }
 .footer {
   background-color: #4e4e4e;
-  height: 71px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 147px;
   font-weight: 700;
   padding-left: 22px;
   padding-right: 14px;
+  flex-direction: column;
 }
 .instagram-brands {
   left: 25%;
@@ -297,7 +295,7 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   padding-top: 15px;
-  padding-left: 166px;
+  margin: 0 auto;
 }
 
 /* --------- Media Queries --------- */
@@ -305,6 +303,13 @@ a:hover {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+  }
+  .btn:hover {
+    color: black;
+    background-color: white;
+  }
+  a:hover {
+    color: black;
   }
 }
 
@@ -329,7 +334,7 @@ a:hover {
   .grid-container {
     display: grid;
     grid-template-columns: 198px 198px 198px;
-    grid-template-rows: 193px 193px 193px;
+    grid-template-rows: 193px 193px;
     column-gap: 63px;
     row-gap: 63px;
     background-color: #405d78;
@@ -350,6 +355,7 @@ a:hover {
   .footer {
     padding-left: 80px;
     padding-right: 80px;
+    flex-direction: row;
   }
   .post-title_title2 {
     text-align: right;
@@ -364,21 +370,19 @@ a:hover {
     display: flex;
     align-items: center;
   }
-
-  
-  :hover{
-    display: none;
+  .navbar p {
+    padding-left: 94px;
   }
+  .page-header-conteiner {
+    padding-left: 94px;
   }
-
+  .page-container2 {
+    padding-left: 94px;
+  }
+}
 
 @media screen and (min-width: 360px) {
   .container {
     width: 768px;
   }
-}
-@media screen and (hover:none) {
-  .btn:hover
-  a:hover
-  .grid-item:hover 
 }
