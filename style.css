@@ -10,7 +10,7 @@ h2 {
   font-size: 36px;
   color: #152d41;
   line-height: 34px;
-  padding-left: 27px;
+  padding-left: 34px;
   padding-right: 28px;
   align-items: center;
   text-align: center;
@@ -163,31 +163,33 @@ a:hover {
   width: 197px;
   height: 197px;
   border-radius: 50%;
-  padding-left: 119px;
-  padding-right: 125px;
+  padding-left: 34px;
+  padding-right: 54px;
 }
 .post-title_title {
   text-decoration: solid;
   line-height: 21px;
   color: #000000;
   font-weight: 800;
-  padding-left: 14px;
+  padding-left: 44px;
 }
 .post-title_title2 {
   text-decoration: solid;
   line-height: 21px;
   color: #000000;
   font-weight: 800;
-  padding-left: 14px;
+  padding-left: 44px;
+  padding-right: 60px;
 }
+
 .post-title_text {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
   text-align: justify;
-  margin-right: 14px;
-  margin-left: 14px;
+  margin-right: 54px;
+  margin-left: 44px;
 }
 .post-title_text2 {
   font-weight: 400;
@@ -195,12 +197,11 @@ a:hover {
   line-height: 21px;
   color: #000000;
   text-align: justify;
-  margin-right: 14px;
-  margin-left: 14px;
+  margin-right: 60px;
+  margin-left: 34px;
 }
 .page-container {
   width: 100%;
-  max-width: 1340px;
   margin: 0 auto;
 }
 .page-container h2 {
@@ -328,7 +329,7 @@ a:hover {
     display: flex;
   }
   .post-title:nth-of-type(odd) {
-    flex-flow: row-reverse;
+    flex-flow: row;
     display: flex;
   }
   .grid-container {
@@ -361,7 +362,6 @@ a:hover {
     text-align: right;
     margin-top: 15px;
     margin-bottom: 15px;
-    padding: 10px;
   }
   .post-title_text2 {
     padding: 10px;
